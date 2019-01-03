@@ -134,7 +134,7 @@ def get_historical_klines(symbol, interval, start_str, end_str=None):
     return output_data
 
 
-symbol = "XRPUSDT"
+symbol = "LTCUSDT"
 start = "1 May, 2018"
 end = "15 Sep, 2018"
 interval = Client.KLINE_INTERVAL_15MINUTE
@@ -168,4 +168,4 @@ writer = csv.writer(outfile)
 
 for row in json.loads(infile.read()):
     writer.writerow(row)
-    
+outfile.close()

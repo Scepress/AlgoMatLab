@@ -3,7 +3,7 @@
 
 %Data Import Statement
 %May to mid-Sep data
-%importData = importBinance('Binance_XRPUSDT_15m_1525132800000-1536969600000.csv', 1, 12742);
+importData = import('Binance_XRPUSDT_15m_1525132800000-1536969600000.csv', 1, 12742);
 
 date=table2array(importData(:,1));
 close=table2array(importData(:,5));
